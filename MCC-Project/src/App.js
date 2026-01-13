@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { Membership, EventsControll, Auth, EventDetail } from './pages';
 import { getToken } from './services/api';
-//testing
 export const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [loading, setLoading] = useState(true);
