@@ -1,0 +1,139 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 16px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  border: 1px solid #e9ecef;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.modal-header h2 {
+  margin: 0;
+  color: #202124;
+  font-size: 24px;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #9aa0a6;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+}
+
+.modal-close:hover {
+  color: #202124;
+}
+
+.modal-form {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.modal-input,
+.modal-textarea {
+  padding: 12px 16px;
+  border: 1px solid #dfe1e5;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  background: #f8f9fa;
+  color: #202124;
+}
+
+.modal-input:focus,
+.modal-textarea:focus {
+  outline: none;
+  border-color: #1a73e8;
+  background: white;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+.modal-textarea {
+  resize: vertical;
+}
+
+.modal-error {
+  background-color: #fce8e6;
+  color: #c5221f;
+  padding: 12px 16px;
+  margin: 24px 24px 0 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  border: 1px solid #f1dede;
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+.modal-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.modal-button-cancel {
+  background-color: white;
+  color: #3c4043;
+  border: 1px solid #dadce0;
+}
+
+.modal-button-cancel:hover {
+  background-color: #f8f9fa;
+  border-color: #d2d3d4;
+}
+
+.modal-button-submit {
+  background: #1a73e8;
+  color: white;
+}
+
+.modal-button-submit:hover:not(:disabled) {
+  background: #1765d0;
+  box-shadow: 0 2px 8px rgba(26, 115, 232, 0.3);
+}
+
+.modal-button-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

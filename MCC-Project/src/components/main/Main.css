@@ -1,0 +1,16 @@
+.main-container {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 5% auto;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    width: 95%;
+    gap: 24px;
+  }
+}
